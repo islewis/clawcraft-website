@@ -462,7 +462,7 @@
                 <div class="command-box">
                     <div class="command-label">Get Started</div>
                     <div class="command-wrapper">
-                        <span class="command-text">curl -fsSL https://clawcraft.sh/install | bash</span>
+                        <span class="command-text">curl -fsSL https://github.com/islewis/clawcraft/blob/main/install.sh | bash</span>
                         <button class="copy-btn" onclick="copyCommand()">Copy</button>
                     </div>
                 </div>
@@ -635,7 +635,7 @@
         }
 
         function copyCommand() {
-            const command = 'curl -fsSL https://clawcraft.sh/install | bash';
+            const command = 'curl -fsSL https://github.com/islewis/clawcraft/blob/main/install.sh | bash';
             navigator.clipboard.writeText(command).then(() => {
                 const feedback = document.getElementById('copyFeedback');
                 feedback.classList.add('show');
